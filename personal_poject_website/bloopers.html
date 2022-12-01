@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="content: Personal Project" content="This webiste Is used to archive personal prjects from engineering to programming.">
+    <title>Medrano's Engineering Projects </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="box-area">
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#"></a>
+          </div>
+          <div class "banner-area">
+            <h1>Medrano</h1>
+          </div>
+          <nav>
+            <div class = "button">
+              <button onclick = "location.href='index.html'" type="button">Home</button>
+              <button onclick="location.href='enginnering_projects.html'" type="button">EGR proj</button>
+              <button onclick = "location.href='videos.html'" type="button">Videos</button>
+              <button onclick = "location.href='videogames.html'" type="button">Videogames</button>
+              <button onclick = "location.href='bloopers.html'" type="button">Bloopers</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </body>
+  <body>
+    <iframe id="cool" width="560" height="315" src="https://www.youtube.com/embed/7h7RB2Mk4bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </body>
+  <!--this is where the JavaScript(Processing.JS) is located-->
+  <body>
+    <p align="center">
+
+<!--This draws the Canvas on the webpage -->
+  <canvas id="mycanvas"></canvas>
+</p>
+  </body>
+  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(screen.width, screen.height);
+        frameRate(90);
+
+        // ProgramCodeGoesHere
+        var drawElectron = function(x,y,h){
+            fill(0, 179, 255);
+            ellipse(x+100*(h/100),y+100*(h/100),50*(h/100),50*(h/100));
+            fill(0, 0, 0);
+            rect(x+87*(h/100),y+97*(h/100),25*(h/100),8*(h/100));
+        };
+var dropMotion = []; //variable for raindrop speed
+var xPositions = []; //variable for raindrop x coordination/range
+var yPositions = []; //variable for raindrop y coordination/range
+var dropColor = [];
+var numDrops = 150; //global variable for the number of raindrops
+var transparent = true;
+
+
+for (var j = 0; j < numDrops; j++) // x range for the raindrops
+{
+    xPositions.push(random(0,screen.width));
+}
+for (var j = 0; j < numDrops; j++) // y range for the raindrops
+{
+    yPositions.push(random(0,screen.height));
+}
+for (var j = 0; j < numDrops; j++) //manages the spectrum of colors for the raindrops
+{
+    dropColor.push(color(random(0,350)));
+}
+for (var j = 0; j < numDrops ; j++){
+
+    dropMotion.push(random(1,5));
+}
+var space = function(){
+    draw = function() {
+          background(102, 102, 102);
+     for (var i = 0; i < xPositions.length; i++) {
+        noStroke();
+        fill(dropColor[i]);
+
+        drawElectron(yPositions[i] % screen.width, xPositions[i], 10);
+
+        yPositions[i] += dropMotion[i];
+
+    }
+    };
+};
+space();
+
+
+
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas");
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc);
+ </script>
+</html>
