@@ -15,11 +15,11 @@
             <a href="#"></a>
           </div>
           <div class "banner-area">
-            <h1>Medrano</h1>
+            <h1>Luis Medrano's Portfolio</h1>
           </div>
           <nav>
             <div class = "button">
-              <button onclick = "location.href='arduino.html'" type="button">Home</button>
+              <button onclick = "location.href='index.html'" type="button">Home</button>
               <button onclick="location.href='enginnering_projects.html'" type="button">EGR proj</button>
               <button onclick = "location.href='videos.html'" type="button">Videos</button>
               <button onclick = " location.href='videogames.html'" type="button">Videogames</button>
@@ -42,7 +42,7 @@
  <script>
     var sketchProc = function(processingInstance) {
      with (processingInstance) {
-        size(screen.width, screen.height);
+        size(screen.width, screen.height / 10);
         frameRate(90);
 
         // ProgramCodeGoesHere
@@ -83,14 +83,9 @@ var space = function(){
         noStroke();
         fill(dropColor[i]);
 
-        drawElectron(yPositions[i] % screen.width, xPositions[i], 10);
+        drawElectron(yPositions[i] % screen.width, xPositions[i], 15);
 
         yPositions[i] += dropMotion[i];
-        textFont(createFont("mono"));
-        textSize(15);
-        fill(0,0,0);
-        text("Welcome to my website! This site is designed to purely archive my work and personal projects with Arduino and Computer Programs using HTML/CSS, C, C++,C#, Python, and Javascript.",0,15);
-
 
     }
     };
@@ -105,4 +100,22 @@ space();
     // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
     var processingInstance = new Processing(canvas, sketchProc);
  </script>
+ <h1>BACKGROUND</h1>
+ <p>Welcome to my portfolio website! My name is Luis Medrano. I graduated at the University of Rhode Island with a Bachelor's of Science degree
+  in Computer Engineering with <br>a Computer Science Minor. My passion within Embedded Systems, Software Engineering & Robotics but I'm always 
+  interested and invested to branch out; learning different<br> diciplines and applying my hardware and software development skills to any position.
+</p>
+<h1>HARDWARE PROJECTS</h1>
+<h2>TRON Game VHDL Hardware Design Programming Development: </h2>
+<p> Applying my knowledge of VHDL Programming Language upon the DE01 FPGA, I was able to reinvent Tron's Light-Cycle video game. </p>
+<h2>Computer Architecture: Single-Cycle Datapath Proccessor: </h2>
+<h2>Computer Design and Optimization for Secure Hash Algorithm: </h2>
+<h1>EMBEDDED SOFTWARE/SYSTEMS PROJECTS</h1>
+<h2>Autonomous Bot [Personal]:</h2>
+<h2>Radio Transceiver Research & Testing:</h2>
+<h2>Radio Transciever Remote Control Car:</h2>
+<h1>SOFTWARE PROJECTS</h1>
+<h2>Robot Object Scanning Simulation:</h2>
+<h2>Flappy Bird Game: </h2>
+<h2>Fractal Visual Website:</h2>
 </html>
