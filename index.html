@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="content: Personal Project" content="This webiste Is used to archive personal prjects from engineering to programming.">
-    <title>Medrano's Engineering Projects </title>
+    <title> Portfolio Homepage </title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -100,21 +100,40 @@ space();
     // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
     var processingInstance = new Processing(canvas, sketchProc);
  </script>
- <h1>BACKGROUND</h1>
- <p>Welcome to my portfolio website! My name is Luis Medrano. I graduated at the University of Rhode Island with a Bachelor's of Science degree
+ <h1 class="backcolor">BACKGROUND</h1><!--I should Include that below are synopses of each projects respectfully. -->
+ <p><strong>Welcome to my portfolio website! My name is Luis Medrano. I graduated at the University of Rhode Island with a Bachelor's of Science degree
   in Computer Engineering with <br>a Computer Science Minor. My passion within Embedded Systems, Software Engineering & Robotics but I'm always 
-  interested and invested to branch out; learning different<br> diciplines and applying my hardware and software development skills to any position.
+  interested and invested to branch out; learning different<br> diciplines and applying my hardware and software development skills to any position.</strong>
 </p>
-<h1>HARDWARE PROJECTS</h1>
-<h2>TRON Game VHDL Hardware Design Programming Development: </h2>
-<p> Applying my knowledge of VHDL Programming Language upon the DE01 FPGA, I was able to reinvent Tron's Light-Cycle video game. </p>
+<h1 class="backcolor">HARDWARE PROJECTS</h1>
+<h2>TRON Game VHDL Hardware Design Programming Development: </h2><!--Should include a padding feature in a CSS div class instead of using <br> in front of paragraph-->
+<p class="paraClassOne"> Applying my knowledge of VHDL Programming Language upon the DE01 FPGA, I was able to reinvent Tron's Light-Cycle video game.
+ Within the first few weeks, I worked with a partner to construct most of the mechanics of the game along with its visual sprites of our liking. By repurposing some
+     mechanics from a Racquetball Game that worked/developed with upon previous lab assignments; we would apply the mobility for both the playable character and the
+    AI/opponent. In other words, the mobility of the "ball" in the Racquetball Game (as previously mentioned) would get tweaked and redefined to move: Forward, Backward,
+      Left, and Right. Instead of diagonal movements like in the original ball game. After this implementation, we desided to work on the Sprites' portion of the video game
+      in which we decided on using <em>Nintendo's Super Mario Bros</em> characters: Luigi and Boo/Teresa.</p>
 <h2>Computer Architecture: Single-Cycle Datapath Proccessor: </h2>
+<p class="paraClassOne">The Single-Cycle Datapath Processor project was the ultimate task to complete for the Computer Architecture course. This involved working with a team of four
+    people to work collaboratively on figuring out the best methods of modifying or upgrading parts of a processor to fully developing components for the final touch
+    that would result in a single-cycle datapath, A.K.A. a computer processor. Through working with a team, we needed to assemble our own processor and components with
+    our own methods and creativity in the end. The project involved developing: ALU, Memory-block(RAM and ROM), Schematic designing, Low-Level Hardware Programming, and
+    Assembly Language Application.</p>
 <h2>Computer Design and Optimization for Secure Hash Algorithm: </h2>
-<h1>EMBEDDED SOFTWARE/SYSTEMS PROJECTS</h1>
-<h2>Autonomous Bot [Personal]:</h2>
+<p class="paraClassOne">The SHA-512 Project is essentially the continuation from what one would learn after developing a processor (which you may refer to the project
+    "Computer Architecture Single-Cycle Datapath Processor"). This project involved a predeveloped CPU labeled as the "Rhody CPU"; developed through the hardware development
+     program: VHDL . The Assembly language in question was also developed in respect to the computer processor of this project in which resembled to the MIPS Assembly Language
+     model. The Secure Hash Algorithim 512 (the SHA-512) is an algorithm that handles the performance, that is, to improve the throughput capabilities of a processor. The 
+     algorithim itself is meant to process any input value of any size and as a result; returns hashes or 64 bytes of data.</p>
+<h1 class="backcolor">EMBEDDED SOFTWARE/SYSTEMS PROJECTS</h1>
+<h2>Autonomous Bot:</h2>
+<p class="paraClassOne"> The Autonomous Bot Project was my first project that involved Embedded Software Programming, Robotics, and C/C++ appliance. True to its name, The
+    Autonomous Bot is a robot that utilizes motor and a sensor to traverse a convoluted area (ideally a maze). The motors involved are two DC motors (3-6V dependency) which
+    are conducted with a motor driver; L298N model. The third motor applied to the system is the Servo motor; a motor that requires 3.3V - 5V and can be controlled by the
+    microcontroller directly(no driver necessary). This motor uses three pins: VCC, GND, & TRG. The Servo can be directed/programmed with angular values. </p>
 <h2>Radio Transceiver Research & Testing:</h2>
 <h2>Radio Transciever Remote Control Car:</h2>
-<h1>SOFTWARE PROJECTS</h1>
+<h1 class="backcolor">SOFTWARE PROJECTS</h1>
 <h2>Robot Object Scanning Simulation:</h2>
 <h2>Flappy Bird Game: </h2>
 <h2>Fractal Visual Website:</h2>

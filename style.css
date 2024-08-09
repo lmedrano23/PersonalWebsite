@@ -6,7 +6,18 @@
 }
 body{
   font-family: 'Poppins';
-  text- align: center;
+  text-align: center;
+}
+h1.backcolor {
+    background-color: #808080 
+}
+h2 {
+    text-align: left;
+}
+p.paraClassOne { /*Frist class to shift, embold, and padding body paragraphs/text. */
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
 }
 .wrapper{
   width: 90%
