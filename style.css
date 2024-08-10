@@ -19,8 +19,12 @@ p.paraClassOne { /*Frist class to shift, embold, and padding body paragraphs/tex
     font-weight: bold;
     padding: 10px;
 }
+p.paraClassTwo {
+  font-weight: bold;
+  padding: 10px;
+}
 .wrapper{
-  width: 90%
+  width: 90%;
   margin: 0 auto;
 }
 header{
@@ -39,7 +43,7 @@ iframe{
   position: absolute;
   bottom: 150;
   right: 200;
-  backgournd: transparent;
+  background: transparent;
 }
 .logo{
   width:30%;
